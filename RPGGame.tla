@@ -140,5 +140,11 @@ Spec == Init /\ [][Next]_<<creatures, turns>>
 
 *)
 
+(* invariantes *)
+MonstroNaoMorre == creatures[Monster].hp > 0
+
+NenhumPersonagemMorre == /\ creatures[Mage].hp > 0
+                         /\ creatures[Druid].hp > 0
+                         /\ creatures[Hunter].hp > 0
 =============================================================================
 
